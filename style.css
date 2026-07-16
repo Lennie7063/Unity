@@ -7,6 +7,7 @@
 body{
     font-family:Roboto,sans-serif;
     background:#fff;
+    padding-top:90px;
 }
 
 /* Header */
@@ -14,6 +15,12 @@ body{
 header{
     background:#EDCCCB;
     padding:18px 0;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+    box-shadow:0 4px 15px rgba(0,0,0,0.15);
 }
 
 .container{
@@ -171,39 +178,65 @@ nav a:hover{
 }
 
 
-/* Intro */
+/* ================= INTRO SECTION ================= */
 
 .intro{
     text-align:center;
-    padding:35px;
+    padding:80px 20px;
+    background:#fff;
 }
 
 .intro h3{
-    font-size:28px;
-    margin-bottom:25px;
-    color:#333;
+    max-width:900px;
+    margin:0 auto 35px;
+    font-family:Oswald,sans-serif;
+    font-size:42px;
+    font-weight:600;
+    line-height:1.3;
+    letter-spacing:1px;
+    color:#222;
+    text-transform:uppercase;
 }
+
+.intro h3::after{
+    content:"";
+    display:block;
+    width:80px;
+    height:4px;
+    background:#ff98ee;
+    margin:25px auto 0;
+    border-radius:10px;
+}
+
 
 .intro button{
-    background:#ff98eefa;
+    background:#EDCCCB;
     color:black;
-    font-style:italic;
-    text-decoration:underline;
     border:none;
-    padding:16px 42px;
+    padding:16px 45px;
     font-size:18px;
+    font-weight:bold;
     cursor:pointer;
-    border-radius:5px;
+    border-radius:50px;
+    transition:.3s;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
 }
 
+
 .intro button:hover{
-    background:#f862dffa;
+    background:#ff98ee;
+    transform:translateY(-5px);
+    box-shadow:0 12px 25px rgba(0,0,0,.25);
 }
 
 
 /* ================= TABLETS ================= */
 
 @media screen and (max-width:1024px){
+
+body{
+    padding-top:85px;
+}
 
 .container{
     width:95%;
@@ -266,6 +299,10 @@ nav.active{
 /* ================= PHONES ================= */
 
 @media screen and (max-width:768px){
+
+body{
+    padding-top:75px;
+}
 
 header{
     padding:15px 0;
