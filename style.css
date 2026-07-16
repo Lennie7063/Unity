@@ -88,11 +88,11 @@ nav a:hover{
 }
 
 .join{
-    background:#ffb9f3fa;
+    background:#ffd0f7;
 }
 
 .donate{
-    background:#ff98eefa;
+    background:#ffc2f5;
 }
 
 
@@ -151,7 +151,7 @@ nav a:hover{
 
 .hero-btn{
     display:inline-block;
-    background:#ff98eefa;
+    background:#EDCCCB;
     color:black;
     text-decoration:none;
     font-weight:bold;
@@ -161,7 +161,7 @@ nav a:hover{
 }
 
 .hero-btn:hover{
-    background:#f862dffa;
+    background:#ff98ee;
     transform:translateY(-3px);
     box-shadow:0 8px 20px rgba(0,0,0,.3);
 }
