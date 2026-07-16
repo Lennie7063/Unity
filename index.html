@@ -9,42 +9,63 @@
 
     <link rel="stylesheet" href="style.css">
 
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
 <header>
+
     <div class="container nav">
 
+        <!-- Logo -->
         <div class="logo">
             <img src="image.png" alt="Unity Party Logo">
             <h1>Unity Party</h1>
         </div>
 
-        <!-- Burger Menu Icon -->
+
+        <!-- Burger Menu -->
         <div class="menu-toggle" id="menu-toggle">
             ☰
         </div>
 
-        <!-- Navigation Menu -->
+
+        <!-- Navigation -->
         <nav id="nav-menu">
+
             <a href="#">About</a>
+
             <a href="#">Get involved</a>
+
             <a href="#">Members</a>
+
             <a href="#">News</a>
 
-            <button class="join">Join</button>
-            <button class="donate">Donate</button>
+
+            <button class="join">
+                Join
+            </button>
+
+            <button class="donate">
+                Donate
+            </button>
+
         </nav>
 
     </div>
+
 </header>
 
 
+
+<!-- Hero Section -->
+
 <section class="hero">
 
-    <img src="hero.png" alt="Unity Party Hero">
+    <img src="hero.png" alt="Unity Party Hero Image">
+
 
     <div class="hero-overlay">
 
@@ -53,16 +74,24 @@
             Unity Party
         </h2>
 
-        <p>Your Voice, Real Change.</p>
+
+        <p>
+            Your Voice, Real Change.
+        </p>
+
 
         <a href="#" class="hero-btn">
             Join Us Today
         </a>
 
+
     </div>
 
 </section>
 
+
+
+<!-- Intro Section -->
 
 <section class="intro">
 
@@ -70,23 +99,34 @@
         We are the voice of the voiceless, our first priority is you.
     </h3>
 
+
     <button>
         Our Manifesto
     </button>
 
+
 </section>
 
 
-<!-- Burger Menu JavaScript -->
+
+<!-- Burger Menu Script -->
+
 <script>
+
 const menuToggle = document.getElementById("menu-toggle");
+
 const navMenu = document.getElementById("nav-menu");
 
+
 menuToggle.addEventListener("click", () => {
+
     navMenu.classList.toggle("active");
+
 });
+
 </script>
 
 
 </body>
+
 </html>
