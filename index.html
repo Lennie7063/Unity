@@ -1,36 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Website</title>
+
+    <title>Unity Party</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-    <header>
-        <h1>Welcome to My Website</h1>
-        <p>Hosted free with GitHub Pages</p>
-    </header>
+<header>
+    <div class="container nav">
 
-    <main>
-        <section class="card">
-            <h2>About</h2>
-            <p>This is a simple static website created using HTML and CSS.</p>
+        <div class="logo">
+            <img src="image.png" alt="Unity Party Logo">
+            <h1>Unity Party</h1>
+        </div>
 
-            <button onclick="sayHello()">Click Me</button>
-        </section>
-    </main>
+        <!-- Burger Menu Icon -->
+        <div class="menu-toggle" id="menu-toggle">
+            ☰
+        </div>
 
-    <footer>
-        <p>&copy; 2026 My Website</p>
-    </footer>
+        <!-- Navigation Menu -->
+        <nav id="nav-menu">
+            <a href="#">About</a>
+            <a href="#">Get involved</a>
+            <a href="#">Members</a>
+            <a href="#">News</a>
 
-    <script>
-        function sayHello() {
-            alert("Hello from GitHub Pages!");
-        }
-    </script>
+            <button class="join">Join</button>
+            <button class="donate">Donate</button>
+        </nav>
+
+    </div>
+</header>
+
+
+<section class="hero">
+
+    <img src="hero.png" alt="Unity Party Hero">
+
+    <div class="hero-overlay">
+
+        <h2>
+            Welcome to the<br>
+            Unity Party
+        </h2>
+
+        <p>Your Voice, Real Change.</p>
+
+        <a href="#" class="hero-btn">
+            Join Us Today
+        </a>
+
+    </div>
+
+</section>
+
+
+<section class="intro">
+
+    <h3>
+        We are the voice of the voiceless, our first priority is you.
+    </h3>
+
+    <button>
+        Our Manifesto
+    </button>
+
+</section>
+
+
+<!-- Burger Menu JavaScript -->
+<script>
+const menuToggle = document.getElementById("menu-toggle");
+const navMenu = document.getElementById("nav-menu");
+
+menuToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+});
+</script>
+
 
 </body>
 </html>
