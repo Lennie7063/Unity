@@ -394,6 +394,104 @@ nav a:hover{
     line-height:1.8;
 }
 
+/* ================= FOOTER ================= */
+
+.footer{
+    background:#EDCCCB;
+    margin-top:80px;
+    padding-top:40px;
+}
+
+.footer-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:40px;
+    padding-bottom:30px;
+}
+
+.footer-logo{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+.footer-logo img{
+    width:70px;
+}
+
+.footer-logo h2{
+    font-family:Oswald,sans-serif;
+    font-size:30px;
+    color:#222;
+    margin-bottom:5px;
+}
+
+.footer-logo p{
+    color:#555;
+    font-size:16px;
+}
+
+.footer-socials{
+    display:flex;
+    gap:18px;
+}
+
+.footer-socials a{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background:white;
+    color:#222;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    font-size:22px;
+    transition:.3s;
+    box-shadow:0 6px 15px rgba(0,0,0,.12);
+}
+
+.footer-socials a:hover{
+    background:#ff98ee;
+    color:black;
+    transform:translateY(-5px);
+}
+
+.footer hr{
+    border:none;
+    border-top:1px solid rgba(0,0,0,.15);
+}
+
+.footer-bottom{
+    text-align:center;
+    padding:20px;
+}
+
+.footer-bottom p{
+    color:#444;
+    font-size:15px;
+}
+
+/* ================= FOOTER DIVIDER ================= */
+
+.footer-divider{
+    line-height:0;
+    overflow:hidden;
+    margin-bottom:-2px;
+}
+
+.footer-divider svg{
+    display:block;
+    width:100%;
+    height:120px;
+}
+
+.footer{
+    background:#EDCCCB;
+    margin-top:0;
+    padding-top:40px;
+}
 
 /* ================= TABLETS ================= */
 
@@ -478,6 +576,25 @@ nav.active{
 
 }
 
+/* Footer */
+
+.footer-content{
+    gap:30px;
+}
+
+.footer-logo img{
+    width:60px;
+}
+
+.footer-logo h2{
+    font-size:26px;
+}
+
+.footer-socials a{
+    width:45px;
+    height:45px;
+    font-size:20px;
+}
 
 /* ================= PHONES ================= */
 
@@ -641,4 +758,28 @@ nav a{
     font-size:16px;
 }
 
+/* Footer */
+
+.footer{
+    margin-top:60px;
+}
+
+.footer-content{
+    flex-direction:column;
+    text-align:center;
+}
+
+.footer-logo{
+    flex-direction:column;
+}
+
+.footer-socials{
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.footer-socials a{
+    width:45px;
+    height:45px;
+}
 }
