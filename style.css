@@ -1,3 +1,10 @@
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+
 *{
     margin:0;
     padding:0;
@@ -229,6 +236,73 @@ nav a:hover{
     box-shadow:0 12px 25px rgba(0,0,0,.25);
 }
 
+/* ================= SECTION DIVIDER ================= */
+
+.section-divider{
+    width:85%;
+    margin:20px auto;
+    border:none;
+    border-top:2px solid #e5e5e5;
+}
+
+
+/* ================= OUR PLAN ================= */
+
+.our_plan{
+    padding:80px 20px;
+    background:#fff;
+    scroll-margin-top:90px;
+}
+
+.plan-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+}
+
+.plan-text{
+    flex:1;
+}
+
+.plan-text h3{
+    font-family:Oswald,sans-serif;
+    font-size:42px;
+    font-weight:600;
+    text-transform:uppercase;
+    color:#222;
+    margin-bottom:25px;
+}
+
+.plan-text h3::after{
+    content:"";
+    display:block;
+    width:80px;
+    height:4px;
+    background:#ff98ee;
+    margin-top:18px;
+    border-radius:10px;
+}
+
+.plan-text p{
+    font-size:20px;
+    line-height:1.8;
+    color:#555;
+    text-align:left;
+}
+
+.plan-image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.plan-image img{
+    max-width:420px;
+    width:100%;
+    height:auto;
+}
+
 
 /* ================= TABLETS ================= */
 
@@ -291,6 +365,24 @@ nav.active{
 
 .hero-btn{
     padding:14px 30px;
+}
+
+/* Our Plan */
+
+.plan-content{
+    gap:40px;
+}
+
+.plan-text h3{
+    font-size:34px;
+}
+
+.plan-text p{
+    font-size:18px;
+}
+
+.plan-image img{
+    max-width:320px;
 }
 
 }
@@ -383,6 +475,43 @@ nav a{
 
 .intro button{
     width:100%;
+}
+
+/* Divider */
+
+.section-divider{
+    width:90%;
+}
+
+/* Our Plan */
+
+.our_plan{
+    padding:60px 20px;
+    scroll-margin-top:75px;
+}
+
+.plan-content{
+    flex-direction:column-reverse;
+    text-align:center;
+    gap:30px;
+}
+
+.plan-text h3{
+    font-size:24px;
+}
+
+.plan-text h3::after{
+    margin:18px auto 0;
+}
+
+.plan-text p{
+    text-align:center;
+    font-size:16px;
+    line-height:1.7;
+}
+
+.plan-image img{
+    max-width:220px;
 }
 
 }

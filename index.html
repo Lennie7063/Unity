@@ -12,9 +12,11 @@
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
+
 
 <header>
 
@@ -36,7 +38,7 @@
         <!-- Navigation -->
         <nav id="nav-menu">
 
-            <a href="#">About</a>
+            <a href="#our-plan" id="about-link">Our Plan</a>
 
             <a href="#">Get involved</a>
 
@@ -105,25 +107,55 @@
         Our Manifesto
     </button>
 
-
 </section>
 
-<section class="Our plan">
-    
-    <img src="MegaPhone.png" alt="Mega Phone Image">
 
-    <h3> 
-        Our Plan.
-    </h3>
 
-    <p>
-        At the unity party we pride ourselves on listening to you and making change in your honour.  You are our priority. 
-We plan to lead a movement that sparks hope in those who have a passion for making Britain the best it can be for the current, for the future and for everyone. 
-Whether it's the environment and the ever rising concern of climate change or the need for schools and improvements for vulnerable people we plan to listen to you about what you need. 
-Our plan is to strengthen the community, making life better for everyone, led by the people.
-we are the voice of the voiceless, our first priority is you
-</p>
+<!-- Divider -->
 
+<hr class="section-divider">
+
+
+
+<!-- Our Plan Section -->
+
+<section class="our_plan" id="our-plan" style="scroll-margin-top:90px;">
+
+    <div class="container plan-content">
+
+
+        <!-- Text -->
+
+        <div class="plan-text">
+
+            <h3>
+                Our Plan
+            </h3>
+
+
+            <p>
+                At Unity Party, we believe every person deserves the opportunity to
+                succeed. Our plan focuses on improving education, strengthening
+                healthcare, supporting local communities, creating better jobs, and
+                ensuring every voice is heard. Together, we can build a fairer,
+                stronger, and more united future for everyone.
+            </p>
+
+
+        </div>
+
+
+
+        <!-- Image -->
+
+        <div class="plan-image">
+
+            <img src="MegaPhone.png" alt="Megaphone">
+
+        </div>
+
+
+    </div>
 
 </section>
 
@@ -134,13 +166,23 @@ we are the voice of the voiceless, our first priority is you
 <script>
 
 const menuToggle = document.getElementById("menu-toggle");
-
 const navMenu = document.getElementById("nav-menu");
 
-
 menuToggle.addEventListener("click", () => {
-
     navMenu.classList.toggle("active");
+});
+
+
+const aboutLink = document.getElementById("about-link");
+
+aboutLink.addEventListener("click", function(e){
+
+    e.preventDefault();
+
+    document.querySelector("#our-plan").scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
 
 });
 
