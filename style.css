@@ -761,7 +761,8 @@ nav a{
 /* Footer */
 
 .footer{
-    margin-top:60px;
+    margin-top:0;
+    padding-top:30px;
 }
 
 .footer-content{
@@ -782,4 +783,17 @@ nav a{
     width:45px;
     height:45px;
 }
+
+/* Wave */
+
+.footer-divider{
+    height:60px;
+    overflow:hidden;
+    margin:0;
+}
+
+.footer-divider svg{
+    height:60px;
+    width:100%;
+    display:block;
 }
