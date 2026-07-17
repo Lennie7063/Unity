@@ -304,6 +304,97 @@ nav a:hover{
 }
 
 
+/* ================= OUR PEOPLE ================= */
+
+.team{
+    padding:80px 20px;
+    background:#fff;
+}
+
+.team-heading{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.team-heading h3{
+    font-family:Oswald,sans-serif;
+    font-size:42px;
+    font-weight:600;
+    text-transform:uppercase;
+    color:#222;
+}
+
+.team-heading h3::after{
+    content:"";
+    display:block;
+    width:80px;
+    height:4px;
+    background:#ff98ee;
+    margin:20px auto;
+    border-radius:10px;
+}
+
+.team-heading p{
+    max-width:700px;
+    margin:auto;
+    font-size:20px;
+    color:#555;
+    line-height:1.7;
+}
+
+.team-grid{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.profile-card{
+    background:white;
+    width:340px;
+    padding:35px 30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 12px 30px rgba(0,0,0,.12);
+    transition:.35s ease;
+}
+
+.profile-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,.2);
+}
+
+.profile-card img{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid #EDCCCB;
+    margin-bottom:20px;
+}
+
+.profile-card h4{
+    font-family:Oswald,sans-serif;
+    font-size:28px;
+    color:#222;
+    margin-bottom:8px;
+}
+
+.profile-card h5{
+    color:#ff98ee;
+    font-size:18px;
+    margin-bottom:18px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+.profile-card p{
+    font-size:17px;
+    color:#555;
+    line-height:1.8;
+}
+
+
 /* ================= TABLETS ================= */
 
 @media screen and (max-width:1024px){
@@ -512,6 +603,42 @@ nav a{
 
 .plan-image img{
     max-width:220px;
+}
+
+/* Our People */
+
+.team{
+    padding:60px 20px;
+}
+
+.team-heading h3{
+    font-size:24px;
+}
+
+.team-heading p{
+    font-size:16px;
+}
+
+.team-grid{
+    gap:25px;
+}
+
+.profile-card{
+    width:100%;
+    max-width:350px;
+}
+
+.profile-card img{
+    width:120px;
+    height:120px;
+}
+
+.profile-card h4{
+    font-size:24px;
+}
+
+.profile-card p{
+    font-size:16px;
 }
 
 }
