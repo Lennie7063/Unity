@@ -104,13 +104,13 @@ nav a:hover{
     z-index: 1;
 
     /* NEW */
-    transition: transform 0.25s ease;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-/* Make the button grow on hover */
 .join:hover,
 .donate:hover {
     transform: scale(1.08);
+    box-shadow: 0 8px 25px rgba(209, 75, 185, 0.45);
 }
 
 /* Moving glowing border */
