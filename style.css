@@ -93,20 +93,29 @@ nav a:hover{
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 12px 24px; 
+    padding: 12px 24px;
     border-radius: 50px;
-    overflow: hidden; 
-    background: #ffc2f5; /* Bright pink button background */
-    color: black;        /* Dark text for clear readability */
+    overflow: hidden;
+    background: #ffc2f5;
+    color: black;
     font-weight: bold;
     border: none;
     cursor: pointer;
     z-index: 1;
+
+    /* NEW */
+    transition: transform 0.25s ease;
+}
+
+/* Make the button grow on hover */
+.join:hover,
+.donate:hover {
+    transform: scale(1.08);
 }
 
 /* Moving glowing border */
-.join::before,
-.donate::before {
+.join:hover::before,
+.donate:hover::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -114,16 +123,15 @@ nav a:hover{
     width: 200%;
     height: 300%;
     transform: translate(-50%, -50%);
-    
-    /* We use a darker/stronger purple-pink so the line is visible against the light pink background */
+
     background: conic-gradient(
         from 0deg,
         transparent 60%,
-        #d14bb9 90%, 
+        #d14bb9 90%,
         transparent 100%
     );
-    
-    z-index: -2; 
+
+    z-index: -2;
     animation: moveGlow 2s linear infinite;
 }
 
@@ -132,9 +140,9 @@ nav a:hover{
 .donate::after {
     content: "";
     position: absolute;
-    inset: 2px; 
-    border-radius: 48px; 
-    background: #ffc2f5; /* FIXED: Now matches the bright pink background! */
+    inset: 2px;
+    border-radius: 48px;
+    background: #ffc2f5;
     z-index: -1;
 }
 
