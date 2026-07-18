@@ -86,7 +86,7 @@ nav a:hover{
     color:black;
 }
 
-/* Update your main button styles with this */
+
 .join,
 .donate {
     position: relative;
@@ -98,12 +98,12 @@ nav a:hover{
     overflow: hidden;
     background: #ffc2f5;
     color: black;
-    font-weight: bold;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 18px; /* <-- Explicitly sets both to the same size */
     border: none;
     cursor: pointer;
     z-index: 1;
-
-    /* NEW */
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
@@ -113,7 +113,7 @@ nav a:hover{
     box-shadow: 0 8px 25px rgba(209, 75, 185, 0.45);
 }
 
-/* Moving glowing border */
+
 .join:hover::before,
 .donate:hover::before {
     content: "";
@@ -135,7 +135,7 @@ nav a:hover{
     animation: moveGlow 2s linear infinite;
 }
 
-/* Inner mask to reveal only a thin border */
+
 .join::after,
 .donate::after {
     content: "";
