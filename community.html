@@ -1,13 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Healthcare Policy - Unity Party</title>
-  
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Unity Party | Community</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="Images/image2.png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
+
 <body>
 
-  </body>
+<header>
+
+    <div class="container nav">
+
+        <a href="index.html" class="logo">
+            <img src="Images/image.png" alt="Unity Party Logo">
+        </a>
+
+        <!-- Burger Menu -->
+        <div class="menu-toggle" id="menu-toggle">
+            ☰
+        </div>
+
+        <!-- Navigation -->
+        <nav id="nav-menu">
+
+            <a href="index.html#our-plan">Our Plan</a>
+
+            <a href="index.html#our-team">Our People</a>
+
+            <a href="#">News</a>
+
+            <a href="#">Members</a>
+
+            <button class="join">
+                Join
+            </button>
+
+            <a href="https://tinyurl.com/ypsz2ztv" class="donate">
+                Donate
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+<!-- Hero Section -->
+
+<section class="hero">
+
+    <img src="Images/hero.png" alt="Unity Party Community">
+
+    <div class="hero-overlay">
+
+        <h2>
+            
+            Community<br>
+        </h2>
+
+        <p>
+            Our policy for Community
+        </p>
+
+        
+
+    </div>
+
+</section>
+
+<!-- Page Content -->
+
+<main style="min-height: 80vh;">
+
+<section class="our_plan" id="our-plan" style="scroll-margin-top:90px;">
+
+    <div class="container plan-content">
+
+
+        <!-- Text -->
+
+        <div class="plan-text">
+
+            
+
+
+           <h3>Building Stronger Communities</h3>
+
+<p>
+    Community plays a big part in our party. Your voice is what matters most to us.
+    We want to ensure everyone, no matter where they come from, feels welcome,
+    accepted, and free to be themselves.
+
+</p>
+
+<p>
+    To achieve this, we will invest in stronger communities by:
+</p>
+
+<ul class="community-list">
+    <li>Increasing investment in community sporting events, including marathons and other local activities.</li>
+
+    <li>Supporting more parades and celebrations, including Pride events in major cities across the UK.</li>
+
+    <li>Ensuring everyone's voice is heard by funding more open debates and public discussions.</li>
+
+    <li>Creating more parks, playgrounds, skate parks and recreational spaces to encourage young people to enjoy the outdoors and spend time with friends and family.</li>
+</ul>
+
+<p>
+    These improvements will help reduce anti-social behaviour, create safer
+    neighbourhoods, and bring people together.
+</p>
+
+<p>
+    One united community is at the heart of the Unity Party, and together we
+    can build a stronger, fairer future for everyone.
+</p>
+
+
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<div class="policy-navigation">
+
+    <a href="manifesto.html" class="policy-btn">
+        ← Back to Manifesto
+    </a>
+
+    <a href="next-policy.html" class="policy-btn">
+        Next Policy →
+    </a>
+
+</div>
+
+
+
+
+    
+</main>
+
+<!-- Burger Menu Script -->
+<script>
+const menuToggle = document.getElementById("menu-toggle");
+const navMenu = document.getElementById("nav-menu");
+
+menuToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+});
+</script>
+
+<div class="footer-divider">
+    <svg viewBox="0 0 1440 160" preserveAspectRatio="none">
+        <path
+            d="M0,95 C450,120 900,5 1440,35 L1440,160 L0,160 Z"
+            fill="#EDCCCB">
+        </path>
+    </svg>
+</div>
+
+<footer class="footer">
+
+    <div class="container footer-content">
+
+        <div class="footer-logo">
+            <img src="Images/image2.png" alt="Unity Party Logo">
+            <div>
+                <h2>Unity Party</h2>
+                <p>Your Voice, Real Change.</p>
+            </div>
+        </div>
+
+        <div class="footer-socials">
+
+            <a href="https://www.tiktok.com/@partyforunity" aria-label="TikTok">
+                <i class="fab fa-tiktok"></i>
+            </a>
+
+            <a href="https://www.instagram.com/theunityparty__/" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="https://discord.gg/ttADN9hsPp" aria-label="Discord">
+                <i class="fab fa-discord"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div class="footer-bottom">
+        <p>© 2026 Unity Party. All rights reserved.</p>
+    </div>
+
+</footer>
+
+</body>
+
 </html>

@@ -449,6 +449,58 @@ nav a:hover{
     line-height:1.8;
 }
 
+/* ================= COMMUNITY PAGE LIST ================= */
+
+.community-list{
+    margin:25px 0;
+    padding-left:30px;
+}
+
+.community-list li{
+    margin-bottom:18px;
+    line-height:1.8;
+    color:#555;
+    font-size:20px;
+}
+
+/* ================= POLICY NAVIGATION ================= */
+
+.policy-navigation{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:50px;
+    width:100%;
+}
+
+/* ================= POLICY NAVIGATION ================= */
+
+.policy-navigation{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:50px;
+    width:100%;
+    padding:0 100px;
+}
+
+.policy-btn{
+    display:inline-block;
+    background:#EDCCCB;
+    color:black;
+    text-decoration:none;
+    font-weight:bold;
+    padding:14px 30px;
+    border-radius:40px;
+    transition:.3s;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+.policy-btn:hover{
+    background:#ff98ee;
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
 /* ================= FOOTER ================= */
 
 .footer{
@@ -811,6 +863,19 @@ nav a{
 
 .profile-card p{
     font-size:16px;
+}
+
+.policy-navigation{
+    flex-direction:column;
+    gap:20px;
+    padding:0;
+}
+
+.policy-btn{
+    width:100%;
+    text-align:center;
+}
+
 }
 
 /* Footer */
