@@ -19,4 +19,4 @@ Open `index.html` in your browser.
 
 Your website will be available at:
 
-https://YOUR_USERNAME.github.io/REPOSITORY_NAME/
+theunityparty.site
